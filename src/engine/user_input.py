@@ -46,8 +46,8 @@ class Inputs:
         self.pressed_keys.add(key)
 
         # Send the event to sprites
-        util.send_event("key" + key + "_pressed")
-        util.send_event("keyany_pressed")
+        util.send_event("key_" + key + "_pressed")
+        util.send_event("key_any_pressed")
 
         # Handle hotkeys
         self.hotkey(util, event)
